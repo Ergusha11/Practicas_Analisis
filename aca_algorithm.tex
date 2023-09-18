@@ -1,0 +1,170 @@
+\documentclass[12pt,twoside]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{amsmath}
+\usepackage[active]{srcltx}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{makeidx}
+\usepackage{amsthm}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+\usepackage{fancyhdr}
+\usepackage{graphics}
+%----------------------------------------------------------------------------------------------
+\usepackage{amsmath, amssymb}
+\usepackage{amsmath}
+\usepackage[active]{srcltx}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{makeidx}
+\usepackage[dvips]{graphicx}
+
+\renewcommand{\baselinestretch}{1}
+\setcounter{page}{1}
+\setlength{\textheight}{21.6cm}
+\setlength{\textwidth}{14cm}
+\setlength{\oddsidemargin}{1cm}
+\setlength{\evensidemargin}{1cm}
+\pagestyle{myheadings}
+\thispagestyle{empty}
+\markboth{\small{Pr\'actica 1. Nombre Alumno 1, Nombre Alumno 2.}}{\small{.}}
+\date{}
+\begin{document}
+
+
+\begin{figure}[h]
+\vspace{-3cm} \hspace{-2cm} \setlength{\unitlength}{1mm}
+\begin{picture}(15,25)(-10,0)
+% \includegraphics[width=16cm,height=3cm]{titulo.jpg}
+\end{picture}
+\end{figure}
+
+
+\vspace{0cm}
+
+\centerline{\bf Ingeniería en Inteligencia Artificial, An\'alisis y Diseño de Algoritmos}
+
+\centerline{\bf Sem: 2024-1, 3BV1, Pr\'actica 1, Fecha}
+
+\centerline{}
+
+%\centerline{}
+
+
+\begin{center}
+\Large{\textsc{Pr\'actica 1: Determinaci\'on experimental de la complejidad temporal de un algoritmo}}
+\end{center}
+\centerline{}
+\centerline{\bf {Nombre Completo Alumno 1, Nombre Completo Alumno 2.}}
+\centerline{}
+\centerline{$correo@alumno_1, correo@alumno_2$}
+
+
+
+\newtheorem{Theorem}{\quad Theorem}[section]
+
+\newtheorem{Definition}[Theorem]{\quad Definition}
+
+\newtheorem{Corollary}[Theorem]{\quad Corollary}
+
+\newtheorem{Lemma}[Theorem]{\quad Lemma}
+
+\newtheorem{Example}[Theorem]{\quad Example}
+
+\bigskip
+
+\textbf{Resumen:} Redactar de manera breve y concisa de que trata el trabajo presentado.
+
+
+
+
+
+{\bf Palabras Clave:} Colocar de 3 a 5 palabras clave (una palabra clave ser\'a el \textbf{lenguaje de programaci\'on utilizado, ustedes elegir\'an el lenguaje de programaci\'on entre C, C++ o Java}).
+
+\section{Introducci\'on}
+En est\'a secci\'on, como su nombre lo indica, introducir al lector al trabajo presentado. En el caso de est\'a primera pr\'actica podr\'ian comenzar explicando la importancia de los algoritmos, posteriormente la importancia de analizar un algoritmo y finalizar con el objetivo de la pr\'actica.
+
+Indicaciones para el env\'io de la pr\'actica: 1) Tienen a los m\'as 8 d\'ias para subir sus pr\'acticas a la plataforma de Teams en la secci\'on correspondiente en su bloc de notas. 2) Cada Pr\'actica debe de contener todo el c\'odigo fuente de sus programas y el c\'odigo fuente del reporte en \textbf{LaTeX} en un archivo de tipo \textbf{RAR}, \'este archivo se deber\'a de adjuntar en su bloc de notas con la opci\'on de \textbf{insertar como datos adjuntos} (figura 1).
+
+\newpage
+
+\medskip
+
+\begin{figure}[h]
+\vspace{3cm} \hspace{-2cm} \setlength{\unitlength}{1mm}
+\begin{picture}(15,25)(-55,0)
+% \includegraphics[width=7cm,height=5cm]{adjuntos.jpg}
+\end{picture}
+\end{figure}
+\vspace{-1cm}
+\begin{center}
+Figura 1. Insertar como datos adjuntos.
+\end{center}
+\medskip
+
+\vspace{0cm}
+
+4) En el bloc de notas deber\'an adem\'as de insertar su reporte en formato \textbf{PDF} mediante la opci\'on insertar copia impresa del archivo (figura 2).
+
+\medskip
+
+5) Recuerden que los c\'odigos de sus algoritmos implementados deben de tener plantilla de datos y comentarios (si sus c\'odigos no contienen alguno de estos, se les restar\'an puntos a su calificaci\'on de la pr\'actica).
+
+
+\medskip
+
+\begin{figure}[h]
+\vspace{3cm} \hspace{-2cm} \setlength{\unitlength}{1mm}
+\begin{picture}(15,25)(-55,0)
+% % \includegraphics[width=7cm,height=5cm]{insertar.jpg}
+\end{picture}
+\end{figure}
+\vspace{-1cm}
+\begin{center}
+Figura 2. Insertar como datos adjuntos.
+\end{center}
+\medskip
+
+
+\section{Conceptos B\'asicos}
+Aqu\'i va todo lo necesario para comprender el trabajo. En el caso de esta pr\'actica podr\'ian colocar los conceptos de $\Theta$, $O$ y $\Omega$. Adem\'as comentar que algoritmos se desarrollar\'an y mostrar los \textbf{pseudo-c\'odigos} (\textbf{NO} colocar c\'odigo fuente), pueden mostrar ejemplos del funcionamiento del algoritmo implementado.
+
+\section{Experimentaci\'on y Resultados}
+En est\'a secci\'on tiene que ir toda la experimentaci\'on que hayan hecho referente a la pr\'actica. Pueden colocar impresiones de pantalla del funcionamiento de sus programas, tablas, gr\'aficas, entre otros. Cada elemento que coloquen como los mencionados (impresiones de pantalla, tablas, gr\'aficas) deber\'an de explicarse y no olviden enumerar todos los elementos utilizados.
+
+
+\section{Conclusiones}
+Las conclusiones de manera general y de manera individual. En lo general, podr\'ian escribir por ejemplo errores que se presentaron y como se resolvieron, observaciones de como mejorar el algoritmo, si quedaron los resultados esperados o no, y el porqu\'e, etc.
+Las conclusiones individuales ya cada quien sabr\'a que redactar. A las conclusiones individuales se les anexar\'a una fotograf\'ia del cada alumno.
+
+Conclusiones Alumno 1   
+
+Conclusiones Alumno 2   
+
+
+
+
+\section{Anexo}
+
+En esta secci\'on se anexar\'an la resoluci\'on de los problemas de tarea planteados utilizando \textbf{LaTeX} (\textbf{NO} fotos de los problemas realizados a mano).
+
+
+
+
+\section{Bibliograf\'ia}
+
+Mostrar referencias en \textbf{formato APA}. \textbf{Importante observaci\'on}: Si alguna pr\'actica tiene al menos el 25$\%$ de similitud respecto a otros trabajos, la calificaci\'on de esa pr\'actica ser\'a igual a 0. Si se detecta alguna pr\'actica plagiada en su totalidad (c\'odigo o reporte), el equipo ser\'a acreedor a una sanci\'on de la califici\'on igual a 0 en toda la evaluaci\'on correspondiente. Para evitar el plagio en sus trabajos (reporte), se utilizar\'a la plataforma de \textbf{turnitin}.
+
+\medskip
+
+
+
+
+
+
+
+
+
+
+\end{document}
